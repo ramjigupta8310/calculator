@@ -13,7 +13,7 @@ buttonsArray.forEach(btn =>{
             string="";
             display.value = string;
         }
-        else if (buttonText === "=") {
+        else if (e.target.innerHTML === "=") {
             try {
                 string = eval(string).toString(); // Eval expression and convert to string
                 display.value = string;
@@ -23,7 +23,7 @@ buttonsArray.forEach(btn =>{
             }
         }
         else {
-            string += buttonText;
+            string += e.target.innerHTML;
             display.value = string;
         }
     })
