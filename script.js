@@ -19,7 +19,7 @@ buttonsArray.forEach(btn =>{
                 display.value = string;
             } catch (error) {
                 display.value = "Error"; 
-                string = ""; /
+                string = "";
             }
         }
         else {
